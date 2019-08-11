@@ -1,0 +1,9 @@
+.gallery_row {
+  max-height: 400px;
+  margin-bottom: 34px;
+  overflow: hidden;
+}
+
+.tab {
+  cursor: pointer;
+}
