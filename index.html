@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Omnomnado</title>
+  <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
   <link rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
@@ -14,62 +16,108 @@
     crossorigin="anonymous"
   ></script>
   <link rel=stylesheet href="style.css"></style>
+  <link rel="shortcut icon" type="image/x-icon" href="images/icon.ico" />
   <script type="text/javascript" src="code.js"></script>
 </head>
-<body style="background-color: #fdf6e3; font-size: 120%;">
-  <div class="container" style="text-align: center;font-family: 'Source Sans Pro', sans-serif">
-    <div class="row" style="text-align: left; margin-top: 2em;">
-      <div class="col">
-        <span style="font-size: 200%;">OMNOMNADO<br></span>
-        <span style="padding-left: 5px">Marta Moreno Martínez</span>
+<body>
+  <div class="container" style="text-align: center">
+    <div class="row" style="margin-top: 6em;">
+      <div class="col"><img src="images/Cabecera.png" style="height: 12em"></img></div>
+    </div>
+    <div class="row" style="max-width: 800px; margin: auto; font-family: 'Bellota'; margin-top: 2em;">
+      <div class="col tab" id="gal_btn" onclick="changeTab('gal')" style="font-weight: 700; border-right: 1px solid;">WORK</div>
+      <div class="col tab" id="collab_btn" onclick="changeTab('collab')" style="border-right: 1px solid;">COLLABS / ZINES</div>
+      <div class="col tab" id="me_btn"  onclick="changeTab('me')" style="border-right: 1px solid">ABOUT ME</div>
+      <div class="col tab" onclick="window.open('')">SHOP</div>
+    </div>
+    <div class="row" id="gal_tab" style="padding: 80px 0 80px 0;">
+      <div class="col-lg-6 col-sm-12" style="margin-left: 2%; margin-right: -1%;">
+        <div class="row">
+          <img src="images/work/einozuken.jpg" class="gallery_image">
+        </div>
+        <div class="row">
+          <img src="images/work/niñafoca.jpg" class="gallery_image">
+        </div>
+        <div class="row">
+          <img src="images/work/lobete.png" class="gallery_image">
+        </div>
+        <div class="row">
+          <img src="images/work/tranquilcmyk.jpg" class="gallery_image">
+        </div>
+        <div class="row">
+          <img src="images/work/starcmyk.jpg" class="gallery_image">
+        </div>
+        <div class="row">
+          <img src="images/work/spellcmyk.jpg" class="gallery_image">
+        </div>
+        <div class="row">
+          <img src="images/work/ricardo-y-roberta.png" class="gallery_image">
+        </div>
+      </div>
+      <div class="col-lg-6 col-sm-12" style="margin-left: -1%">
+        <div class="row">
+          <img src="images/work/gonxkillua1.jpg" class="gallery_image">
+        </div>
+        <div class="row">
+          <img src="images/work/stoneocean.jpg" class="gallery_image">
+        </div>
+        <div class="row">
+          <img src="images/work/pajaro.png" class="gallery_image">
+        </div>
+        <div class="row">
+          <img src="images/work/harajuku.jpg" class="gallery_image">
+        </div>
+        <div class="row">
+          <img src="images/work/clockcmyk.jpg" class="gallery_image">
+        </div>
+        <div class="row">
+          <img src="images/work/niñas.png" class="gallery_image">
+        </div>
       </div>
     </div>
-    <div class="row" style="max-width: 600px; margin: auto; padding-top: 60px;">
-      <div class="col tab" id="me_btn"  onclick="changeTab('me')">Acerca de mí</div>
-      <div class="col tab" id="gal_btn" onclick="changeTab('gal')" style="font-weight: 700">Galería</div>
-      <!--kdiv class="col tab" id="cv_btn"  onclick="changeTab('cv')">CV</div-->
-    </div>
-    <div class="row" id="gal_tab" style="padding: 80px 0 80px 0;"><div class="col">
-      <div class="row gallery_row">
-        <div class="col-6">
-          <img src="images/oreinyourstyle.jpg" style="width: 100%">
-        </div>
-        <div class="col-6">
-          <img src="https://scontent-mad1-1.cdninstagram.com/vp/e1ec131c01b5eb53de008ae38c50350d/5DD848EF/t51.2885-15/e35/23279276_145862169374221_4262414355884146688_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com" style="width: 100%">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6">
-          <img src="https://scontent-mad1-1.cdninstagram.com/vp/ef35ba918f6cf249e50ee37482759b44/5DDED147/t51.2885-15/sh0.08/e35/s640x640/50618730_1159250327579423_8327928056707035949_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com" style="width: 100%">
-        </div>
-        <div class="col-6">
-          <img src="https://scontent-mad1-1.cdninstagram.com/vp/f264dfe4127d637590cab5afba540a5e/5DC8586C/t51.2885-15/sh0.08/e35/s640x640/51061641_137787027253109_5997322330419579703_n.jpg?_nc_ht=scontent-mad1-1.cdninstagram.com" style="width: 100%">
-        </div>
-      </div>
-    </div></div>
     <div class="row" id="me_tab" style="display: none">
       <div class="col-1">
         <img src="data/TADA.png" style="width: 450px; height: 450px;">
       </div>
       <div class="col-8 offset-1" style="padding-top: 35px">
-        <!--Basically, I'm a frog<br>
-        I do the drawing<br><br-->
-        ¡Hola!<br>
-        Soy Marta Moreno, animadora e ilustradora y graduada en Comunicación Audiovisual.<br>
-        <!--He estudiado Comunicación Audiovisual en la UEM, y allí trabajé en radio, grabé cortos y me interesé por la fotografía.<br>
-        Los últimos tres años los he pasado estudiando Animación en la ESDIP, en Madrid. Disfruto especialmente con el diseño de personajes y el contar historias interesantes, y creo que la animación es el medio idóneo para expresarme.<br><br-->
-        <!--Mi poema favorito es:<br>
-        <i>Hippity Hoppity</i><br>
-        <i>Get off my property</i><br><br>
-        <b>Contrátame o tomato.</b-->
+        Hi! I’m Marta.<br>
+        I’m an illustrator and 2D animator based in Spain. I was born and raised in a town in
+        south Spain, Sevilla, and then I moved to Madrid to study a Film and Multimedia degree.
+        After that I decided to finally take a 2D animation course which could be said to be my
+        one “True love”.<br>
+        At the moment I’m working on Cafelito Studios and part-timing as an art teacher.<br>
+        I love cats, rainy days, comics and coffee, probably more than necessary.<br>
+        <!--Basically, I'm a frog<br> I do the drawing<br><br> ¡Hola!<br> Soy Marta Moreno, animadora e ilustradora y graduada en Comunicación Audiovisual.<br> He estudiado Comunicación Audiovisual en la UEM, y allí trabajé en radio, grabé cortos y me interesé por la fotografía.<br> Los últimos tres años los he pasado estudiando Animación en la ESDIP, en Madrid. Disfruto especialmente con el diseño de personajes y el contar historias interesantes, y creo que la animación es el medio idóneo para expresarme.<br><br> Mi poema favorito es:<br> <i>Hippity Hoppity</i><br> <i>Get off my property</i><br><br> <b>Contrátame o tomato.</b-->
       </div>
     </div>
-    <div class="row" id="cv_tab" style="display: none">
-      <div class="col" style="padding-top: 35px">
+    <div class="row" id="collab_tab" style="display: none; padding-top: 4.5em; text-align: justify;">
+      <div class="col-lg-4 col-sm-12">
+        <img src="images/collabs/cafelito.jpg" class="collab_image"
+          onclick="window.open('https://twitter.com/CafelitoStudio');"
+        >
+        <div style="padding: 1em">
+          A small but ambituous group of animators and artists based in Madrid, Spain. We do visual development as well as final art. Currently working on new projects and developing quality stories.
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <img src="images/collabs/ROJO.jpg" class="collab_image"
+          onclick="window.open('https://twitter.com/ChromicZines')"
+        >
+        <div style="padding: 1em;">
+          Series of zines that recolects stories by various authors and artists. All inspired by one single colour that changes every edition.
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-12">
+        <img src="images/collabs/jojo.jpg" class="collab_image"
+          onclick="window.open('https://twitter.com/jojosfanzine')"
+        >
+        <div style="padding: 1em;">
+          A fanzine project based on JoJo's Bizarre Adventure by Hirohiko Araki. It's a collection of 35 illustrations by Spanish and latinamerican authors inspired by the first 5 arcs of the series. For all publics and with no spoilers.
+        </div>
         <!--I do very gud work pls giv moni<br><br-->
       </div>
     </div>
-    <div class="row" style="margin-top: 4em">
+    <div class="row" style="margin-top: 7em">
       <div class="col">
         Puedes encontrarme en:<br>
       </div>
