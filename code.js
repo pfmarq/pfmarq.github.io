@@ -14,3 +14,9 @@ changeTab = new_tab => {
   });
   document.getElementById(new_tab + '_btn').style.fontWeight = 700;
 }
+
+Array.from(document.getElementsByClassName('media_icon')).forEach(node => {
+  node.addEventListener("mouseover", event => {
+    event.target.src = "images/logo-ins_hover.png";
+  });
+});

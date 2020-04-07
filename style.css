@@ -7,6 +7,9 @@
 .tab {
   cursor: pointer;
 }
+.tab:hover {
+  color: #e9c057;
+}
 
 .collab_image {
   cursor: pointer;
@@ -17,6 +20,12 @@
 .gallery_image {
   width: 92%;
   margin: 2%;
+}
+
+.media_icon {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
 }
 
 body {
