@@ -1,5 +1,5 @@
-const TABS = ['gal_tab', 'collab_tab', 'me_tab'];
-const BTNS = ['gal_btn', 'collab_btn', 'me_btn'];
+const TABS = ['gal_tab', 'collab_tab', 'me_tab', 'shop_tab'];
+const BTNS = ['gal_btn', 'collab_btn', 'me_btn', 'shop_btn'];
 changeTab = new_tab => {
   TABS.forEach(tab => {
     if (document.getElementById(tab)) {
