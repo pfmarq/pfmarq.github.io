@@ -18,8 +18,9 @@
 }
 
 .gallery_image {
-  width: 92%;
-  margin: 2%;
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 .media_icon {
