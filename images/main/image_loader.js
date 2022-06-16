@@ -30,8 +30,23 @@ const IMAGE_NAMES = [
   'w28.jpg',
 ];
 
+const hideBigImage = () => {
+  const div = document.getElementById('big_image_div');
+  div.style.display = 'none';
+};
+const clickBigImage = event => {
+  event.stopPropagation();
+};
+
 const left_side_panel  = document.getElementById('left_images');
 const right_side_panel = document.getElementById('right_images');
+
+const setBigImage = image_name => {
+  const big_img = document.getElementById('big_image');
+  big_img.src = "images/main/" + image_name;
+  const div = document.getElementById('big_image_div');
+  div.style.display = 'flex';
+};
 
 let is_left_side = true;
 IMAGE_NAMES.forEach(image_name => {
@@ -39,6 +54,8 @@ IMAGE_NAMES.forEach(image_name => {
     src="images/main/${image_name}"
     class="gallery_image"
     onerror="this.style.display='none'"
+    style="cursor: pointer"
+    onclick="setBigImage('${image_name}')"
   >`;
   const node = document.createElement("img");
   if (is_left_side) {
