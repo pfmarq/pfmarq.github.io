@@ -36,7 +36,7 @@ const right_side_panel = document.getElementById('right_images');
 let is_left_side = true;
 IMAGE_NAMES.forEach(image_name => {
   const img_html = `<img
-    src="images/work/${image_name}"
+    src="images/main/${image_name}"
     class="gallery_image"
     onerror="this.style.display='none'"
   >`;
