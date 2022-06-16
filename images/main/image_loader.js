@@ -38,15 +38,39 @@ const clickBigImage = event => {
   event.stopPropagation();
 };
 
+const big_img = document.getElementById('big_image');
+const big_img_div = document.getElementById('big_image_div');
+const setBigImage = image_name => {
+  big_img.src = "images/main/" + image_name;
+  big_img_div.style.display = 'flex';
+};
+const cycleBigImage = (direction, event) => {
+  if (big_img_div.style.display === 'flex') {
+    const image_name = big_img.src.split('/').slice(-1)[0];
+    const current_image_index = IMAGE_NAMES.findIndex(name => name === image_name);
+    if (current_image_index !== -1) {
+      const new_index = current_image_index + direction;
+      if (new_index >= 0 && new_index < IMAGE_NAMES.length) {
+        setBigImage(IMAGE_NAMES[new_index]);
+      }
+    }
+  }
+  if (event) event.stopPropagation();
+};
+
+document.addEventListener('keydown', event => {
+  switch (event.keyCode) {
+    case 37:
+      cycleBigImage(-1);
+      break;
+    case 39:
+      cycleBigImage(1);
+      break;
+  }
+});
+
 const left_side_panel  = document.getElementById('left_images');
 const right_side_panel = document.getElementById('right_images');
-
-const setBigImage = image_name => {
-  const big_img = document.getElementById('big_image');
-  big_img.src = "images/main/" + image_name;
-  const div = document.getElementById('big_image_div');
-  div.style.display = 'flex';
-};
 
 let is_left_side = true;
 IMAGE_NAMES.forEach(image_name => {
